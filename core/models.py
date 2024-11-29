@@ -6,4 +6,4 @@ class Subscription(models.Model):
     cpf = models.CharField(max_length=11)
     email = models.EmailField()
     phone = models.CharField(max_length=20)
-    created_at = models.DateTimeField(auto_now_add=True)
+    sent_on = models.DateTimeField(auto_now_add=True)

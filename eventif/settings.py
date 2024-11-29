@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     "test_without_migrations",
     "core",
     "subscriptions",
-    "contact"
+    "contact",
 ]
 
 MIDDLEWARE = [

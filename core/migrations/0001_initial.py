@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
                 ('cpf', models.CharField(max_length=11)),
                 ('email', models.EmailField(max_length=254)),
                 ('phone', models.CharField(max_length=20)),
-                ('created_at', models.DateTimeField(auto_now_add=True)),
+                ('sent_on', models.DateTimeField(auto_now_add=True)),
             ],
         ),
     ]
