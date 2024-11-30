@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from core.views import home
-from contact.views import contacts
+from contact.views import contact
 
 urlpatterns = [
     path("", home, name="home"),
