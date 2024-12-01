@@ -1,8 +1,7 @@
 from django.db import models
 
-# Create your models here.
 class Contact(models.Model):
-    name = models.CharField(max_length=80) #precaução, provavelmente poderia fazer um 
+    name = models.CharField(max_length=80) #precaução, provavelmente poderia fazer um
     phone = models.CharField(max_length=15)
     email = models.EmailField()
     message = models.CharField(max_length=300)
@@ -13,4 +12,4 @@ class Contact(models.Model):
         ordering = ('-sent_on',)
     def __str__(self):
         return self.name
-    
+
