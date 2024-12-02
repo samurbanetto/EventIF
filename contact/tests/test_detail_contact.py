@@ -6,5 +6,5 @@ class ContactFormTest(TestCase):
         self.form = ContactForm()
 
     def test_has_form(self):
-        expected = ['name', 'email', 'phone', 'message']
+        expected = ['name', 'phone', 'email', 'message']
         self.assertSequenceEqual(expected, list(self.form.fields))
