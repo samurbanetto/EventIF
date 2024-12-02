@@ -33,7 +33,7 @@ def detail(request, pk):
         contact = Contact.objects.get(pk=pk)
     except Contact.DoesNotExist:
         raise Http404
-    return render(request, '/contact_detail.html', {'contact': contact})
+    return render(request, 'contact/contact_detail.html', {'contact': contact})
 
 
 def _send_mail(template_name, context, subject, from_, to):
