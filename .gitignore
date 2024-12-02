@@ -8,3 +8,4 @@ subscriptions/__pycache__
 subscriptions/migrations/__pycache__
 .env
 staticfiles
+.venv
